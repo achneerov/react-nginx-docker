@@ -14,7 +14,7 @@
     <script>
         function calculate() {
             var number = document.getElementById("number").value;
-            fetch('http://localhost:3000/calculate', { // Use the full URL including the protocol and port
+            fetch('http://localhost:3000/calculate', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
