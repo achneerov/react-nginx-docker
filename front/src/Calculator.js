@@ -5,7 +5,7 @@ function Calculator() {
     const [result, setResult] = useState('');
 
     const calculate = () => {
-        fetch('/api/calculate', { // Changed URL to match Nginx configuration
+        fetch('http://localhost:3000/calculate', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
