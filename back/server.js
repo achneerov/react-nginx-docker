@@ -7,9 +7,9 @@ const port = 3000;
 
 app.use(express.static(__dirname));
 app.use(bodyParser.json());
-app.use(cors()); // Add CORS middleware
+app.use(cors());
 
-app.options('/calculate', cors()); // Enable preflight OPTIONS request
+app.options('/calculate', cors());
 
 app.post('/calculate', (req, res) => {
     const number = parseFloat(req.body.number);
